@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import {User, Lock} from "@element-plus/icons-vue";
+import router from "@/router";
+function btn(){
+  router.push('/index')
+}
 </script>
 
 <template>
@@ -18,7 +22,7 @@ import {User, Lock} from "@element-plus/icons-vue";
           <el-input :prefix-icon="Lock" placeholder="密码"/>
         </el-form-item>
         <el-form-item>
-          <el-button class="login-btn" type="primary" round @click="">
+          <el-button class="login-btn" type="primary" round @click="btn">
             登录
           </el-button>
         </el-form-item>
